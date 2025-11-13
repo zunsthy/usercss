@@ -1,0 +1,77 @@
+/* ==UserStyle==
+@name           hide-ads
+@version        1.0.1
+@license        MPL-2.0
+@description    hide site ads
+@namespace      https://github.com/zunsthy/usercss
+@namespace      https://raw.githubusercontent.com/zunsthy/usercss/master/src/hide-ads.user.css
+@author         z
+==/UserStyle== */
+
+@-moz-document domain("share.dmhy.org"), domain("www.dmhy.org") {
+  .download-pikpak,
+  .download-pp {
+    display: none;
+  }
+  #\31 280_ad > a:first-child,
+  #\31 280_adv > a:first-child,
+  #pkpk > a:first-child {
+    display: none;
+  }
+  #bebiv3_ad,
+  .kiwi-ad-wrapper-1280x120,
+  .kiwi-loaded {
+    display: none;
+  }
+  marquee {
+    display: none;
+  }
+}
+
+@-moz-document url-prefix("https://m.manhuagui.com/comic/") {
+  .sitemaji_banner {
+    display: none;
+  }
+}
+
+@-moz-document url-prefix("https://www.856dm.com/play/"), url-prefix("https://www.706dm.com/") {
+  divz {
+    display: none !important;
+  }
+}
+
+@-moz-document domain("m.baileixs.com"), domain("gukebook.com"), domain("banlisb.com"), domain("aifashus.com") {
+  .nav-next-page + .box-wrap.wrap {
+    display: none;
+  }
+  #chapter-content > p:not(.chapter-line) {
+    display: none;
+  }
+  #chapter-content > center[style^="color:darkred"] {
+    display: none;
+  }
+  .chapter-ext-report {
+    display: none;
+  }
+}
+
+@-moz-document domain("liveuamap.com") {
+  [id^="google_ads_iframe"],
+  [class^="publift-widget-"] {
+    display: none !important;
+  }
+}
+
+@-moz-document domain("so.gushiwen.cn"), domain("www.guwendao.net") {
+  #threeWeixin2 {
+    display: none !important;
+  }
+}
+
+@-moz-document domain("bbs.nga.cn") {
+  div[style^="background:#444"],
+  td[style^="background: rgb(68, 68, 68) none"],
+  div[style^="background: rgb(68, 68, 68) none"] {
+    display: none;
+  }
+}
