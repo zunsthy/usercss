@@ -1,0 +1,159 @@
+/* ==UserStyle==
+@name           Improve Content Readability
+@version        1.0.0
+@license        MPL-2.0
+@description    improve page content readability for novel or commic
+@namespace      https://github.com/zunsthy/usercss
+@namespace      https://raw.githubusercontent.com/zunsthy/usercss/master/src/improve-content-readability.user.css
+@author         z
+==/UserStyle== */
+
+@-moz-document domain("bbs.wenxuecity.com") {
+  #viewLeft {
+    display: none;
+  }
+  body > div:nth-child(2) {
+    width: 100% !important;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #postbody {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #articleBody {
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  #msgbodyContent {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    line-height: 1.8;
+    font-family: Noto Sans SC, sans-serif;
+  }
+  #msgbodyContent > p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  
+  body, #postlinks, #postbody, #postform, #postlist {
+    background-color: #aa5;
+    color: #333;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      background-color: #222;
+      color: #fff;
+    }
+    body, #postlinks, #postbody, #postform, #postlist {
+      background-color: #333;
+      color: #ccb;
+    }
+    #breadcrumb span a,
+    #channelBot a,
+    #channelTop a, 
+    breadcrumbs a, 
+    .breadcrumbs span, 
+    #postlinks a, 
+    #postmeta a, 
+    #postbody a, 
+    #postlogin a, 
+    #postform a, 
+    .post, 
+    #footer 
+    .info span, 
+    #footnav a {
+      color: #8ae;
+    }
+    a:hover,
+    #postlinks a:hover, 
+    #postmeta a:hover,
+    .bar_one span a:hover,
+    .maincontent .wrapper a:hover, 
+    #breadcrumb span a:hover, 
+    #channelBot a:hover, 
+    #channelTop a:hover, 
+    #postlogin a:hover, 
+    #postbody a:hover, 
+    #postlist a:hover, 
+    #postlinks a:hover, 
+    #postmeta a:hover, 
+    #editmessage, 
+    .hitcounter
+    {
+      color: #8ae;
+    }
+  }
+}
+
+@-moz-document url-prefix("https://masiro.moe/forum.php") {
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --dark-color-bg: #24292f;
+      --dark-color-text: #ffffffbb;
+    }
+    body {
+      background-image: none;
+      background-color: var(--dark-color-bg);
+    }
+    .bm,
+    .pls,
+    .plc {
+      background-color: var(--dark-color-bg);
+      color: var(--dark-color-text);
+    }
+  }
+  
+  .t_f,
+  .t_f td {
+    font-size: 18px;
+  }
+}
+
+@-moz-document url("https://veu.github.io/mini-tetris/dist/tetris.html") {
+  body {
+    font-size: 36px !important;
+    line-height: 18px !important;
+    letter-spacing: -4px !important;
+  }
+}
+
+@-moz-document url-prefix("https://home.gamer.com.tw/creationDetail.php") {
+  #BH-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #BH-master {
+    width: 100%;
+  }
+  #BH-master > .BH-search {
+    display: none;
+  }
+  .MSG-list8 {
+    height: unset;
+  }
+  .MSG-list8 .MSG-list8C {
+    padding: 0;
+  }
+  .MSG-list8C img {
+    max-width: unset;
+  }
+  .MSG-list8 .MSG-list8C > div > img {
+    display: block;
+    width: 100% !important;
+    max-width: 100%;
+  }
+  #BH-slave {
+    min-height: unset !important;
+  }
+}
